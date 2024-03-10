@@ -1,24 +1,21 @@
 <?php
-   session_start();
-   $title = $_POST['title'];
-   $preview = $_POST['preview'];
-   $text = $_POST['text'];
-   $img = $_POST['img'];
-   $date = $_POST['date'];
 
-   $_SESSION['error2'] = "";
+$mysqli = new mysqli("localhost", "root", "root", "register-bg");
 
-   if(mb_strlen($title) == 0 || mb_strlen($preview) == 0 || mb_strlen($text) == 0 || mb_strlen($img) == 0) {
-    $_SESSION['error2'] = "Все поля должны быть заполнены";
-    header("Location: ../pages/create.php");
-    exit();
-   }
-   $mysql = new mysqli('localhost','root','root','register-bg');
+$title = $_POST['title'];
+$preview = $_POST['preview'];
+$text = $_POST['text'];
+$img = $_POST['img'];
+$date = $_POST['date'];
 
-   $mysql->query("INSERT INTO `news` (`title`, `preview`, `text`, `img`, `date`) VALUES('$title', '$preview', '$text', '$img', '$date')");
-   
-   $mysql->close();
+$stmt = $mysqli->prepare("INSERT INTO news (id, title, preview, text, img, date) VALUES (NULL, ?, ?, ?, ?, ?)");
 
-   header('Location: ../index.php');
-   exit();
+$stmt->bind_param("sssss", $title, $preview, $text, $img, $date);
+
+$stmt->execute();
+
+$stmt->close();
+
+header("Location: ../index.php");
+
 ?>
