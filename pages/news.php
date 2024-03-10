@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="mt-3 nav-item nav-link link-body-emphasis border p-3 rounded-3" >
-            <a class="text-decoration-none my-2 text-black" href="news.html">
+            <a class="text-decoration-none my-2 text-black" href="news.php">
               <div class="d-flex justify-content-between align-items-center">
                 <div>
                   <i class="bi bi-newspaper mr-1 text-primary"></i>
@@ -56,7 +56,7 @@
             </a>
           </li>
           <li class="mt-3 nav-item nav-link link-body-emphasis border p-3 rounded-3" >
-            <a class="text-decoration-none my-2 text-black" href="contacts.html">
+            <a class="text-decoration-none my-2 text-black" href="contacts.php">
               <div class="d-flex justify-content-between align-items-center">
                 <div>
                   <i class="bi bi-chat-square mr-1 text-primary"></i>

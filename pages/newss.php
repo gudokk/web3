@@ -56,7 +56,7 @@
             </a>
           </li>
           <li class="mt-3 nav-item nav-link link-body-emphasis border p-3 rounded-3" >
-            <a class="text-decoration-none my-2 text-black" href="contacts.html">
+            <a class="text-decoration-none my-2 text-black" href="contacts.php">
               <div class="d-flex justify-content-between align-items-center">
                 <div>
                   <i class="bi bi-chat-square mr-1 text-primary"></i>
@@ -175,9 +175,10 @@
         </div>
         <?php 
         if (isset($_SESSION['admin_access']) && $_SESSION['admin_access'] == true): ?>
-          <button type="button" class="btn btn-dark w-25" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Удалить новость
-</button>
+          <button type="button" class="btn btn-dark mb-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Удалить новость
+          </button>
+
 
 <!-- Модальное окно -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
