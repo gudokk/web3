@@ -66,6 +66,33 @@
               </div>
             </a>
           </li>
+          <?php
+         if(isset($_COOKIE['user']) && $_COOKIE['user'] != ''):
+      ?>
+      <li class="mt-3 nav-item nav-link link-body-emphasis border p-3 rounded-3" >
+            <a class="text-decoration-none my-2 text-black" href="../scripts/exit.php">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-box-arrow-left mr-1 text-primary"></i>
+                  Выйти
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+      <?php else:?>
+        <li class="mt-3 nav-item nav-link link-body-emphasis border p-3 rounded-3" >
+            <a class="text-decoration-none my-2 text-black" href="registration.php">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-box-arrow-right mr-1 text-primary"></i>
+                  Регистрация
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+      <?php endif;?>
         </ul>
       </div>
     </div>
