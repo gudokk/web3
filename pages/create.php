@@ -154,7 +154,7 @@
     </div>
     <div class="mb-3 w-100">
       <label for="InputDate" class="form-label">Дата</label>
-      <input type="date" class="form-control" id="InputDate" name="date" name="date" value="<?php echo date("Y-m-d") ?>"  readonly>
+      <input type="date" class="form-control" id="InputDate" name="date" value="<?php echo date("Y-m-d") ?>"  readonly>
     </div>
     <button type="submit" class="btn btn-outline-dark">Добавить новость</button>
     <?php

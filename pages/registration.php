@@ -110,7 +110,7 @@ session_start();
       ?>
       <a class="nav-item nav-link link-body-emphasis" href="../scripts/exit.php">Выйти</a>
       <?php else:?>
-        <a class="nav-item nav-link link-body-emphasis" href="registration.php">Регистрация</a>
+        <a class="nav-item nav-link link-body-emphasis active" href="registration.php">Регистрация</a>
       <?php endif;?>
     </nav>
   </div>

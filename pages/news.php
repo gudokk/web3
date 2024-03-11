@@ -159,7 +159,7 @@ foreach ($news as $oneNews) {
             <div class="mb-2 w-fit-content p-1 rounded-3 text-body-secondary border"><?= $oneNews["date"] ?></div>
             <h3><p class="card-text mb-3"><?= $oneNews["title"] ?></p></h3>
             <p class="card-text mb-3"><?= $oneNews["preview"] ?></p>
-            <img src="<?= $oneNews["img"] ?>" class="d-block rounded-lg-5 rounded-3 mb-3 w-100" alt="(((">
+            <img src=".<?= $oneNews["img"] ?>" class="d-block rounded-lg-5 rounded-3 mb-3 w-100" alt="(((">
             <p class="card-text"><?= $oneNews["text"] ?></p>
         </div>
     </div>

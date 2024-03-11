@@ -48,7 +48,7 @@ $insert_stmt->execute();
 $insert_stmt->close();
 $mysqli->close();
 
-header("Location: /pages/authorization.php");
+header("Location: ../pages/authorization.php");
 exit();
 
 ?>
