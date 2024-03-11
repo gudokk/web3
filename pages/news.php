@@ -144,29 +144,31 @@
       </div>
     </div>
   </div>
-  </div>
-  <?php
-$mysqli = new mysqli('localhost', 'root', 'root', 'register-bg');
-$query = "SELECT * FROM news";
-$result = $mysqli->query($query);
-$news = $result->fetch_all(MYSQLI_ASSOC);
 
-foreach ($news as $oneNews) {
-?>
-<div class="row mb-2">
-    <div class="banner-flying row g-0 border rounded">
-        <div class="p-4 d-flex flex-column justify-content-between">
-            <div class="mb-2 w-fit-content p-1 rounded-3 text-body-secondary border"><?= $oneNews["date"] ?></div>
-            <h3><p class="card-text mb-3"><?= $oneNews["title"] ?></p></h3>
-            <p class="card-text mb-3"><?= $oneNews["preview"] ?></p>
-            <img src=".<?= $oneNews["img"] ?>" class="d-block rounded-lg-5 rounded-3 mb-3 w-100" alt="(((">
-            <p class="card-text"><?= $oneNews["text"] ?></p>
-        </div>
-    </div>
-</div>
-<?php
-}
-?>
+  <div class="container-news">
+    <?php
+      $mysqli = new mysqli('localhost', 'root', 'root', 'register-bg');
+      $query = "SELECT * FROM news";
+      $result = $mysqli->query($query);
+      $news = $result->fetch_all(MYSQLI_ASSOC);
+
+      foreach ($news as $oneNews) {
+        ?>
+          <div class="row mb-2">
+              <div class="banner-flying row g-0 border rounded">
+                  <div class="p-4 d-flex flex-column justify-content-between">
+                      <div class="mb-2 w-fit-content p-1 rounded-3 text-body-secondary border"><?= $oneNews["date"] ?></div>
+                      <h3><p class="card-text mb-3"><?= $oneNews["title"] ?></p></h3>
+                      <p class="card-text mb-3"><?= $oneNews["preview"] ?></p>
+                      <img src=".<?= $oneNews["img"] ?>" class="d-block rounded-lg-5 rounded-3 mb-3 w-100" alt="(((">
+                      <p class="card-text"><?= $oneNews["text"] ?></p>
+                  </div>
+              </div>
+          </div>
+        <?php
+      }
+    ?>
+  </div>
 </main>
 
 <footer class="py-2 mt-4 border-top">
