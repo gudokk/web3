@@ -31,7 +31,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="pages/news1.html">
+                <a href="pages/news.php">
                     <img src="images/news-1.jpg" class="d-block w-100" alt="...">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="pages/news2.html">
+                <a href="pages/news.php">
                     <img src="images/news-2.jpg" class="d-block w-100" alt="...">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="pages/news3.html">
+                <a href="pages/news.php">
                     <img src="images/news-3.jpg" class="d-block w-100" alt="...">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="pages/news4.html">
+                <a href="pages/news.php">
                     <img src="images/news-4.jpg" class="d-block w-100" alt="...">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
@@ -206,7 +206,7 @@
         <div class="d-flex flex-row">
             <div>
                 <h3 class="display-5 fst-italic">
-                    Самые свежие новости Новосибрской области
+                    Самые свежие новости Новосибирской области
                 </h3>
             </div>
             <div class="d-lg-flex d-none align-items-center">

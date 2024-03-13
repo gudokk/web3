@@ -148,7 +148,7 @@
 </div>
 
 <div class="container">
-    <div class="container-news">
+    <div class="container">
       <?php
         $mysqli = new mysqli("localhost", "root", "root", "register-bg");
         $news = 0;

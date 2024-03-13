@@ -136,7 +136,7 @@
     <div class="d-flex flex-row">
       <div>
         <h3 class="display-5 fst-italic">
-          Самые свежие новости Новосибрской области
+          Самые свежие новости Новосибирской области
         </h3>
       </div>
       <div class="d-lg-flex d-none align-items-center">
@@ -145,7 +145,7 @@
     </div>
   </div>
 
-  <div class="container-news">
+  <div class="container">
     <?php
       $mysqli = new mysqli('localhost', 'root', 'root', 'register-bg');
       $query = "SELECT * FROM news";
